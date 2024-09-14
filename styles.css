@@ -1,0 +1,358 @@
+/* General Styles */
+body { 
+    /* Set the default font for the page and remove default margins/padding */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background color */
+}
+
+header {
+    /* Dark background color and padding for the header */
+    background-color: #333;
+    padding: 20px;
+}
+
+.navbar {
+    /* Flexbox layout to align navbar items horizontally */
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.logo {
+    /* Styling for the logo - white text, larger font size, and uppercase letters */
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+nav {
+    /* Make the navigation take up space and add margin on the left */
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.nav-links {
+    /* Remove bullet points and margin/padding from list */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+.nav-links li {
+    /* Space out each nav item horizontally */
+    margin: 0 20px;
+}
+
+.nav-links a {
+    /* Link styling - white text, no underline, fixed width and height */
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+    width: 100px;
+    height: 40px;
+}
+
+.nav-links a:hover {
+    /* Change link color on hover to aquamarine */
+    color: #7FFFD4;
+}
+
+/* Search Bar */
+.search-bar {
+    /* Align search bar elements horizontally */
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    /* Styling for the search input box */
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+    width: 170px; /* Fixed width */
+}
+
+.search-bar button {
+    /* Styling for the search button */
+    padding: 10px 15px;
+    background-color: #7FFFD4; /* Aquamarine background */
+    color: black;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.search-bar button:hover {
+    /* Darken the button background color on hover */
+    background-color: #20B2AA;
+}
+
+/* Basket */
+.basket {
+    /* Add margin to the left of the basket link */
+    margin-left: 20px;
+}
+
+.basket a {
+    /* Basket link styling similar to nav links */
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.basket a:hover {
+    /* Change basket link color on hover */
+    color: #7FFFD4;
+}
+
+.container {
+    /* Center content and set width to 90% of the screen */
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    /* Center and style the main heading */
+    text-align: center;
+    margin: 40px 0;
+    color: #333;
+}
+
+.product-grid {
+    /* Flexbox layout for product items with wrapping */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    /* Styling for individual product boxes */
+    position: relative; /* Allows use of pseudo-elements */
+    background-color: white;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 30%; /* Fixed width for each product box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.product img {
+    /* Make product images responsive */
+    max-width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Border under the image */
+    padding-bottom: 15px;
+}
+
+.product h2 {
+    /* Styling for product titles */
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.product p {
+    /* Styling for product details */
+    color: #555;
+    font-size: 14px;
+}
+
+.price {
+    /* Product price styling - bold, larger font and aquamarine color */
+    font-size: 20px;
+    color: #7FFFD4;
+    margin: 10px 0;
+}
+
+.buy-now {
+    /* Styling for the "Add to Cart" button */
+    background-color: #7FFFD4;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase; /* Capitalize text */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition on hover */
+}
+
+.buy-now:hover {
+    /* Darken button background on hover */
+    background-color: #20B2AA;
+}
+
+/* Footer Styles */
+footer {
+    /* Dark background and white text for the footer */
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-container {
+    /* Flexbox layout for footer content */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    /* Width and margin for each footer column */
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    /* Styling for footer column headings */
+    color: #7FFFD4;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    /* Reset list styles */
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    /* Spacing between footer list items */
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    /* Footer link styles */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    /* Change link color on hover */
+    color: #7FFFD4;
+}
+
+.footer-column form {
+    /* Layout form elements in a column */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column input[type="email"] {
+    /* Styling for email input field */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-column button {
+    /* Styling for the subscription button */
+    padding: 10px;
+    border: none;
+    background-color: #7FFFD4;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-column button:hover {
+    /* Darken button background on hover */
+    background-color: #20B2AA;
+}
+
+footer p {
+    /* Styling for footer text */
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Styles - Mobile */
+@media (max-width: 768px) {
+    /* For screens smaller than 768px */
+    .navbar {
+        /* Stack navbar items vertically */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        /* Stack nav links vertically */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        /* Add space between vertical nav links */
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        /* Make search bar full width and add margin on top */
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .product {
+        /* Make product boxes take up full width */
+        width: 100%;
+    }
+
+    .footer-container {
+        /* Stack footer columns vertically */
+        flex-direction: column;
+    }
+
+    .footer-column {
+        /* Make footer columns full width */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For screens smaller than 480px */
+    .logo {
+        /* Reduce logo font size */
+        font-size: 24px;
+    }
+
+    .nav-links a {
+        /* Reduce nav link font size */
+        font-size: 14px;
+    }
+
+    .search-bar input[type="text"] {
+        /* Make search input full width */
+        width: 100%;
+    }
+
+    .product h2 {
+        /* Reduce product title font size */
+        font-size: 16px;
+    }
+
+    .price {
+        /* Reduce product price font size */
+        font-size: 18px;
+    }
+
+    .buy-now {
+        /* Reduce padding for the "Add to Cart" button */
+        padding: 8px 12px
+    }
+}
